@@ -9,6 +9,33 @@
 using namespace Eigen;
 using namespace std;
 
+template class LSS<MatrixXd, VectorXd>;
+
+
+template<typename MatrixType, typename VectorType>
+LSS<MatrixType, VectorType>::LSS() {
+    _tol = 1e-6;
+    _max_iter = 1000;
+}
+template<typename MatrixType, typename VectorType>
+void LSS<MatrixType, VectorType>::setTol(double tol) {
+    _tol = tol;
+}
+
+template<typename MatrixType, typename VectorType>
+void LSS<MatrixType, VectorType>::setMaxIter(int iter){
+    _max_iter = iter;
+}
+
+template<typename MatrixType, typename VectorType>
+double LSS<MatrixType, VectorType>::getTol() {
+    return _tol;
+}
+
+template<typename MatrixType, typename VectorType>
+int LSS<MatrixType, VectorType>::getMaxIter(){
+    return _max_iter;
+}
 
 
 // ================= GENERATION DES MATRICES ==================
@@ -39,13 +66,14 @@ pair<SparseMatrix<double>, MatrixXd> generate_simple_sparse_tridiagonal_matrix(i
 }
 
 // ================== JACOBI DENSE ==================
-tuple<VectorXd, int, double, vector<double>> jacobi_dense_with_error(const MatrixXd& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+template<typename MatrixType, typename VectorType>
+tuple<VectorType, int, double, vector<double>> jacobi_dense_with_error(const MatrixXd& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
     VectorXd x = x0;
     vector<double> errors;
 
-    for(int k=0; k<max_iter; k++) {
+    for(int k=0; k< this->getMaxIter(); k++) {
         VectorXd x_new = VectorXd::Zero(n);
         for(int i=0; i<n; i++) {
             double sum_ax = A.row(i).dot(x) - A(i,i)*x(i);
@@ -54,7 +82,7 @@ tuple<VectorXd, int, double, vector<double>> jacobi_dense_with_error(const Matri
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
         x = x_new;
-        if(error < tol) break;
+        if(error < this->getTol()) break;
     }
 
     auto end = chrono::high_resolution_clock::now();
@@ -63,7 +91,8 @@ tuple<VectorXd, int, double, vector<double>> jacobi_dense_with_error(const Matri
 }
 
 // ================== JACOBI SPARSE ==================
-tuple<VectorXd, int, double, vector<double>> jacobi_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+template<typename MatrixType, typename VectorType>
+tuple<VectorType, int, double, vector<double>>jacobi_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
     VectorXd x = x0;
@@ -74,12 +103,12 @@ tuple<VectorXd, int, double, vector<double>> jacobi_sparse_with_error(const Spar
     SparseMatrix<double> M = A;
     for(int i=0; i<n; i++) M.coeffRef(i,i) = 0.0;
 
-    for(int k=0; k<1000; k++) {
+    for(int k=0; k<this->getMaxIter(); k++) {
         VectorXd x_new = diag_inv.asDiagonal() * (b - M * x);
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
         x = x_new;
-        if(error < tol) break;
+        if(error < this->getTol()) break;
     }
 
     auto end = chrono::high_resolution_clock::now();
@@ -88,13 +117,14 @@ tuple<VectorXd, int, double, vector<double>> jacobi_sparse_with_error(const Spar
 }
 
 // ================= GAUSS-SEIDEL ==================
-tuple<VectorXd, int, double, vector<double>> gauss_seidel_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+template<typename MatrixType, typename VectorType>
+tuple<VectorType, int, double, vector<double>> gauss_seidel_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
     VectorXd x = x0;
     vector<double> errors;
 
-    for(int k=0; k<max_iter; k++) {
+    for(int k=0; k<this->getMaxIter(); k++) {
         VectorXd x_new = x;
         for(int i=0; i<n; i++) {
             double s1 = 0.0, s2 = 0.0;
@@ -106,7 +136,7 @@ tuple<VectorXd, int, double, vector<double>> gauss_seidel_sparse_with_error(cons
         }
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
-        if(error < tol) break;
+        if(error < this->getTol()) break;
         x = x_new;
     }
 
@@ -116,13 +146,14 @@ tuple<VectorXd, int, double, vector<double>> gauss_seidel_sparse_with_error(cons
 }
 
 // ================= SOR ==================
-tuple<VectorXd, int, double, vector<double>> SOR_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact, double omega) {
+template<typename MatrixType, typename VectorType>
+tuple<VectorType, int, double, vector<double>> SOR_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact, double omega) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
     VectorXd x = x0;
     vector<double> errors;
 
-    for(int k=0; k<max_iter; k++) {
+    for(int k=0; k<this->getMaxIter(); k++) {
         VectorXd x_new = x;
         for(int i=0; i<n; i++) {
             double s1 = 0.0, s2 = 0.0;
@@ -135,7 +166,7 @@ tuple<VectorXd, int, double, vector<double>> SOR_sparse_with_error(const SparseM
         }
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
-        if(error < tol) break;
+        if(error < this->getTol()) break;
         x = x_new;
     }
 
@@ -145,7 +176,8 @@ tuple<VectorXd, int, double, vector<double>> SOR_sparse_with_error(const SparseM
 }
 
 // ================== RAYON SPECTRAL ==================
-double rayon_spectral_JS(const MatrixXd& A) {
+template<typename MatrixType, typename VectorType>
+double LSS<typename MatrixType, typename VectorType>::rayon_spectral_JS(const MatrixType& A) {
     MatrixXd D = A.diagonal().asDiagonal();
     MatrixXd D_inv = D.inverse();
     MatrixXd T = D_inv * (A - D);
@@ -154,8 +186,8 @@ double rayon_spectral_JS(const MatrixXd& A) {
     for(int i=0; i<eigvals.size(); i++) rho = max(rho, abs(eigvals(i)));
     return rho;
 }
-
-double rayon_spectral_GS(const MatrixXd& A) {
+template<typename MatrixType, typename VectorType>
+double LSS<typename MatrixType, typename VectorType>::rayon_spectral_GS(const MatrixType& A) {
     MatrixXd D = A.diagonal().asDiagonal();
     MatrixXd L = MatrixXd(A.triangularView<Lower>()) - D;
     MatrixXd U = MatrixXd(A.triangularView<Upper>()) - D;
@@ -168,7 +200,8 @@ double rayon_spectral_GS(const MatrixXd& A) {
     return rho;
 }
 
-double rayon_spectral_SOR(const MatrixXd& A, double omega) {
+template<typename MatrixType, typename VectorType>
+double LSS<typename MatrixType, typename VectorType>::rayon_spectral_SOR(const MatrixType& A, double omega) {
     MatrixXd D = A.diagonal().asDiagonal();
     MatrixXd L = MatrixXd(A.triangularView<Lower>()) - D;
     MatrixXd U = MatrixXd(A.triangularView<Upper>()) - D;
@@ -183,7 +216,8 @@ double rayon_spectral_SOR(const MatrixXd& A, double omega) {
 }
 
 // ================== DIAGONALE DOMINANTE ==================
-void diagonale_dominante(const MatrixXd& A) {
+template<typename MatrixType, typename VectorType>
+void LSS<typename MatrixType, typename VectorType>::diagonale_dominante(const MatrixType& A) {
     int n = A.rows();
     for(int i=0; i<n; i++) {
         double somme = 0.0;
@@ -197,3 +231,5 @@ void diagonale_dominante(const MatrixXd& A) {
     }
     cout << "La matrice est diagonale dominante.\n";
 }
+
+

@@ -12,7 +12,7 @@ using namespace std;
 
 // ================== MAIN ==================
 int main() {
-    LSS solv; 
+    LSS<MatrixXd, VectorXd> solv;
     vector<int> tailles = {10,20,30};
     for(int n : tailles) {
         VectorXd x0 = VectorXd::Zero(n);
@@ -52,13 +52,14 @@ int main() {
         VectorXd xGS = get<0>(resultGS);
         int iterGS = get<1>(resultGS);
         double timeGS = get<2>(resultGS);
-        vector<double> errorsJD = get<3>(resultGS);
+        vector<double> errorsGS = get<3>(resultGS);
 
-        auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact);
+        double omega = 1.25; 
+        auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact,omega);
         VectorXd xSOR = get<0>(resultSOR);
         int iterSOR = get<1>(resultSOR);
         double timeSOR = get<2>(resultSOR);
-        vector<double> errorsJD = get<3>(resultSOR);
+        vector<double> errorsSOR = get<3>(resultSOR);
         
 
         cout << "Jacobi Dense itérations: " << iterJD << " temps: " << timeJD << "s\n";
