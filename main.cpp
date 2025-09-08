@@ -9,10 +9,8 @@
 using namespace Eigen;
 using namespace std;
 
-
-// ================== MAIN ==================
 int main() {
-    LSS<MatrixXd, VectorXd> solv;
+    LSS<MatrixXd, VectorXd> solv;  // instanciation correcte
     vector<int> tailles = {10,20,30};
     for(int n : tailles) {
         VectorXd x0 = VectorXd::Zero(n);
@@ -36,35 +34,14 @@ int main() {
         VectorXd x_exact = A_dense.colPivHouseholderQr().solve(b_h);
 
         auto resultJD = solv.jacobi_dense_with_error(A_dense, b_h, x0, x_exact);
-        VectorXd xJD = get<0>(resultJD);
-        int iterJD = get<1>(resultJD);
-        double timeJD = get<2>(resultJD);
-        vector<double> errorsJD = get<3>(resultJD);
-
         auto resultJS = solv.jacobi_sparse_with_error(A_sparse, b_h, x0, x_exact);
-        VectorXd xJS = get<0>(resultJS);
-        int iterJS = get<1>(resultJS);
-        double timeJS = get<2>(resultJS);
-        vector<double> errorsJS = get<3>(resultJS);
-
-
         auto resultGS = solv.gauss_seidel_sparse_with_error(A_sparse, b_h, x0, x_exact);
-        VectorXd xGS = get<0>(resultGS);
-        int iterGS = get<1>(resultGS);
-        double timeGS = get<2>(resultGS);
-        vector<double> errorsGS = get<3>(resultGS);
+        auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact, 1.8);
 
-        double omega = 1.25; 
-        auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact,omega);
-        VectorXd xSOR = get<0>(resultSOR);
-        int iterSOR = get<1>(resultSOR);
-        double timeSOR = get<2>(resultSOR);
-        vector<double> errorsSOR = get<3>(resultSOR);
-        
-
-        cout << "Jacobi Dense itérations: " << iterJD << " temps: " << timeJD << "s\n";
-        cout << "Jacobi Sparse itérations: " << iterJS << " temps: " << timeJS << "s\n";
-        cout << "Gauss-Seidel itérations: " << iterGS << " temps: " << timeGS << "s\n";
+        cout << "Jacobi Dense itérations: " << get<1>(resultJD) << " temps: " << get<2>(resultJD) << "s\n";
+        cout << "Jacobi Sparse itérations: " << get<1>(resultJS) << " temps: " << get<2>(resultJS) << "s\n";
+        cout << "Gauss-Seidel itérations: " << get<1>(resultGS) << " temps: " << get<2>(resultGS) << "s\n";
+        cout << "SOR itérations: " << get<1>(resultSOR) << " temps: " << get<2>(resultSOR) << "s\n";
     }
     return 0;
 }

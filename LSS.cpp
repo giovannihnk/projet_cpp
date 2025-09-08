@@ -9,7 +9,6 @@
 using namespace Eigen;
 using namespace std;
 
-template class LSS<MatrixXd, VectorXd>;
 
 
 template<typename MatrixType, typename VectorType>
@@ -233,3 +232,4 @@ void LSS<typename MatrixType, typename VectorType>::diagonale_dominante(const Ma
 }
 
 
+template class LSS<MatrixXd, VectorXd>;

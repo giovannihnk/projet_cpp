@@ -12,7 +12,6 @@ using namespace Eigen;
 using namespace std;
 
 
-
 template <typename MatrixType, typename VectorType>
 class LSS{
     private:
