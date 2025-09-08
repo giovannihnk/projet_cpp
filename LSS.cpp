@@ -1,44 +1,21 @@
-#include <iostream>
-#include <vector>
-#include "eigen/Eigen/Dense"
-#include "eigen/Eigen/Sparse"
 #include "LSS.hh"
-#include <chrono>
-#include <cmath>
 
 using namespace Eigen;
 using namespace std;
 
-
+template<typename MatrixType, typename VectorType>
+LSS<MatrixType, VectorType>::LSS() : _tol(1e-6), _max_iter(1000) { }
 
 template<typename MatrixType, typename VectorType>
-LSS<MatrixType, VectorType>::LSS() {
-    _tol = 1e-6;
-    _max_iter = 1000;
-}
-template<typename MatrixType, typename VectorType>
-void LSS<MatrixType, VectorType>::setTol(double tol) {
-    _tol = tol;
-}
+void LSS<MatrixType, VectorType>::setTolerance(double tol) { _tol = tol; }
 
 template<typename MatrixType, typename VectorType>
-void LSS<MatrixType, VectorType>::setMaxIter(int iter){
-    _max_iter = iter;
-}
-
-template<typename MatrixType, typename VectorType>
-double LSS<MatrixType, VectorType>::getTol() {
-    return _tol;
-}
-
-template<typename MatrixType, typename VectorType>
-int LSS<MatrixType, VectorType>::getMaxIter(){
-    return _max_iter;
-}
-
+void LSS<MatrixType, VectorType>::setMaxIterations(int iter) { _max_iter = iter; }
 
 // ================= GENERATION DES MATRICES ==================
-pair<SparseMatrix<double>, MatrixXd> generate_simple_sparse_tridiagonal_matrix(int n, double diagonal_value, double off_diagonal_value) {
+template<typename MatrixType, typename VectorType>
+pair<SparseMatrix<double>, MatrixType>
+LSS<MatrixType, VectorType>::generate_simple_sparse_tridiagonal_matrix(int n, double diagonal_value, double off_diagonal_value) {
     vector<Triplet<double>> triplets;
 
     for(int i=0; i<n; i++) {
@@ -52,7 +29,7 @@ pair<SparseMatrix<double>, MatrixXd> generate_simple_sparse_tridiagonal_matrix(i
     SparseMatrix<double> A(n, n);
     A.setFromTriplets(triplets.begin(), triplets.end());
 
-    MatrixXd A_dense = MatrixXd::Zero(n, n);
+    MatrixType A_dense = MatrixType::Zero(n, n);
     for(int i=0; i<n; i++) {
         A_dense(i, i) = diagonal_value;
         if(i < n-1) {
@@ -66,14 +43,16 @@ pair<SparseMatrix<double>, MatrixXd> generate_simple_sparse_tridiagonal_matrix(i
 
 // ================== JACOBI DENSE ==================
 template<typename MatrixType, typename VectorType>
-tuple<VectorType, int, double, vector<double>> jacobi_dense_with_error(const MatrixXd& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+tuple<VectorType, int, double, vector<double>>
+LSS<MatrixType, VectorType>::jacobi_dense_with_error(const MatrixType& A, const VectorType& b,
+                                                     const VectorType& x0, const VectorType& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
-    VectorXd x = x0;
+    VectorType x = x0;
     vector<double> errors;
 
-    for(int k=0; k< this->getMaxIter(); k++) {
-        VectorXd x_new = VectorXd::Zero(n);
+    for(int k=0; k<_max_iter; k++) {
+        VectorType x_new = VectorType::Zero(n);
         for(int i=0; i<n; i++) {
             double sum_ax = A.row(i).dot(x) - A(i,i)*x(i);
             x_new(i) = (b(i) - sum_ax)/A(i,i);
@@ -81,7 +60,7 @@ tuple<VectorType, int, double, vector<double>> jacobi_dense_with_error(const Mat
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
         x = x_new;
-        if(error < this->getTol()) break;
+        if(error < _tol) break;
     }
 
     auto end = chrono::high_resolution_clock::now();
@@ -91,23 +70,25 @@ tuple<VectorType, int, double, vector<double>> jacobi_dense_with_error(const Mat
 
 // ================== JACOBI SPARSE ==================
 template<typename MatrixType, typename VectorType>
-tuple<VectorType, int, double, vector<double>>jacobi_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+tuple<VectorType, int, double, vector<double>>
+LSS<MatrixType, VectorType>::jacobi_sparse_with_error(const SparseMatrix<double>& A, const VectorType& b,
+                                                      const VectorType& x0, const VectorType& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
-    VectorXd x = x0;
+    VectorType x = x0;
     vector<double> errors;
 
-    VectorXd diag = A.diagonal();
-    VectorXd diag_inv = diag.cwiseInverse();
+    VectorType diag = A.diagonal();
+    VectorType diag_inv = diag.cwiseInverse();
     SparseMatrix<double> M = A;
     for(int i=0; i<n; i++) M.coeffRef(i,i) = 0.0;
 
-    for(int k=0; k<this->getMaxIter(); k++) {
-        VectorXd x_new = diag_inv.asDiagonal() * (b - M * x);
+    for(int k=0; k<_max_iter; k++) {
+        VectorType x_new = diag_inv.asDiagonal() * (b - M * x);
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
         x = x_new;
-        if(error < this->getTol()) break;
+        if(error < _tol) break;
     }
 
     auto end = chrono::high_resolution_clock::now();
@@ -117,14 +98,16 @@ tuple<VectorType, int, double, vector<double>>jacobi_sparse_with_error(const Spa
 
 // ================= GAUSS-SEIDEL ==================
 template<typename MatrixType, typename VectorType>
-tuple<VectorType, int, double, vector<double>> gauss_seidel_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact) {
+tuple<VectorType, int, double, vector<double>>
+LSS<MatrixType, VectorType>::gauss_seidel_sparse_with_error(const SparseMatrix<double>& A, const VectorType& b,
+                                                            const VectorType& x0, const VectorType& x_exact) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
-    VectorXd x = x0;
+    VectorType x = x0;
     vector<double> errors;
 
-    for(int k=0; k<this->getMaxIter(); k++) {
-        VectorXd x_new = x;
+    for(int k=0; k<_max_iter; k++) {
+        VectorType x_new = x;
         for(int i=0; i<n; i++) {
             double s1 = 0.0, s2 = 0.0;
             for(SparseMatrix<double>::InnerIterator it(A, i); it; ++it) {
@@ -135,7 +118,7 @@ tuple<VectorType, int, double, vector<double>> gauss_seidel_sparse_with_error(co
         }
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
-        if(error < this->getTol()) break;
+        if(error < _tol) break;
         x = x_new;
     }
 
@@ -146,14 +129,16 @@ tuple<VectorType, int, double, vector<double>> gauss_seidel_sparse_with_error(co
 
 // ================= SOR ==================
 template<typename MatrixType, typename VectorType>
-tuple<VectorType, int, double, vector<double>> SOR_sparse_with_error(const SparseMatrix<double>& A, const VectorXd& b, const VectorXd& x0, const VectorXd& x_exact, double omega) {
+tuple<VectorType, int, double, vector<double>>
+LSS<MatrixType, VectorType>::SOR_sparse_with_error(const SparseMatrix<double>& A, const VectorType& b,
+                                                   const VectorType& x0, const VectorType& x_exact, double omega) {
     auto start = chrono::high_resolution_clock::now();
     int n = A.rows();
-    VectorXd x = x0;
+    VectorType x = x0;
     vector<double> errors;
 
-    for(int k=0; k<this->getMaxIter(); k++) {
-        VectorXd x_new = x;
+    for(int k=0; k<_max_iter; k++) {
+        VectorType x_new = x;
         for(int i=0; i<n; i++) {
             double s1 = 0.0, s2 = 0.0;
             for(SparseMatrix<double>::InnerIterator it(A, i); it; ++it) {
@@ -165,7 +150,7 @@ tuple<VectorType, int, double, vector<double>> SOR_sparse_with_error(const Spars
         }
         double error = (x_new - x_exact).norm();
         errors.push_back(error);
-        if(error < this->getTol()) break;
+        if(error < _tol) break;
         x = x_new;
     }
 
@@ -176,23 +161,10 @@ tuple<VectorType, int, double, vector<double>> SOR_sparse_with_error(const Spars
 
 // ================== RAYON SPECTRAL ==================
 template<typename MatrixType, typename VectorType>
-double LSS<typename MatrixType, typename VectorType>::rayon_spectral_JS(const MatrixType& A) {
-    MatrixXd D = A.diagonal().asDiagonal();
-    MatrixXd D_inv = D.inverse();
-    MatrixXd T = D_inv * (A - D);
-    Eigen::VectorXcd eigvals = T.eigenvalues();
-    double rho = 0.0;
-    for(int i=0; i<eigvals.size(); i++) rho = max(rho, abs(eigvals(i)));
-    return rho;
-}
-template<typename MatrixType, typename VectorType>
-double LSS<typename MatrixType, typename VectorType>::rayon_spectral_GS(const MatrixType& A) {
-    MatrixXd D = A.diagonal().asDiagonal();
-    MatrixXd L = MatrixXd(A.triangularView<Lower>()) - D;
-    MatrixXd U = MatrixXd(A.triangularView<Upper>()) - D;
-    MatrixXd C = D - L;
-    MatrixXd C_inv = C.inverse();
-    MatrixXd T = C_inv * U;
+double LSS<MatrixType, VectorType>::rayon_spectral_JS(const MatrixType& A) {
+    MatrixType D = A.diagonal().asDiagonal();
+    MatrixType D_inv = D.inverse();
+    MatrixType T = D_inv * (A - D);
     Eigen::VectorXcd eigvals = T.eigenvalues();
     double rho = 0.0;
     for(int i=0; i<eigvals.size(); i++) rho = max(rho, abs(eigvals(i)));
@@ -200,14 +172,29 @@ double LSS<typename MatrixType, typename VectorType>::rayon_spectral_GS(const Ma
 }
 
 template<typename MatrixType, typename VectorType>
-double LSS<typename MatrixType, typename VectorType>::rayon_spectral_SOR(const MatrixType& A, double omega) {
-    MatrixXd D = A.diagonal().asDiagonal();
-    MatrixXd L = MatrixXd(A.triangularView<Lower>()) - D;
-    MatrixXd U = MatrixXd(A.triangularView<Upper>()) - D;
-    MatrixXd M = D - omega*L;
-    MatrixXd N = (1-omega)*D + U;
-    MatrixXd M_inv = M.inverse();
-    MatrixXd T = omega * (M_inv * N);
+double LSS<MatrixType, VectorType>::rayon_spectral_GS(const MatrixType& A) {
+    MatrixType D = A.diagonal().asDiagonal();
+    MatrixType L = A.template triangularView<Eigen::Lower>().toDenseMatrix() - D;
+    MatrixType U = A.template triangularView<Eigen::Upper>().toDenseMatrix() - D;
+
+    MatrixType C = D - L;
+    MatrixType C_inv = C.inverse();
+    MatrixType T = C_inv * U;
+    Eigen::VectorXcd eigvals = T.eigenvalues();
+    double rho = 0.0;
+    for(int i=0; i<eigvals.size(); i++) rho = max(rho, abs(eigvals(i)));
+    return rho;
+}
+
+template<typename MatrixType, typename VectorType>
+double LSS<MatrixType, VectorType>::rayon_spectral_SOR(const MatrixType& A, double omega) {
+   MatrixType D = A.diagonal().asDiagonal();
+    MatrixType L = A.template triangularView<Eigen::Lower>().toDenseMatrix() - D;
+    MatrixType U = A.template triangularView<Eigen::Upper>().toDenseMatrix() - D;
+    MatrixType M = D - omega*L;
+    MatrixType N = (1-omega)*D + U;
+    MatrixType M_inv = M.inverse();
+    MatrixType T = omega * (M_inv * N);
     Eigen::VectorXcd eigvals = T.eigenvalues();
     double rho = 0.0;
     for(int i=0; i<eigvals.size(); i++) rho = max(rho, abs(eigvals(i)));
@@ -216,7 +203,7 @@ double LSS<typename MatrixType, typename VectorType>::rayon_spectral_SOR(const M
 
 // ================== DIAGONALE DOMINANTE ==================
 template<typename MatrixType, typename VectorType>
-void LSS<typename MatrixType, typename VectorType>::diagonale_dominante(const MatrixType& A) {
+void LSS<MatrixType, VectorType>::diagonale_dominante(const MatrixType& A) {
     int n = A.rows();
     for(int i=0; i<n; i++) {
         double somme = 0.0;
@@ -231,5 +218,5 @@ void LSS<typename MatrixType, typename VectorType>::diagonale_dominante(const Ma
     cout << "La matrice est diagonale dominante.\n";
 }
 
-
+// ================== INSTANTIATION EXPLICITE ==================
 template class LSS<MatrixXd, VectorXd>;

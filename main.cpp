@@ -1,47 +1,48 @@
-#include <iostream>
-#include <vector>
-#include "eigen/Eigen/Dense"
-#include "eigen/Eigen/Sparse"
-#include <chrono>
-#include <cmath>
 #include "LSS.hh"
-
-using namespace Eigen;
+#include <iostream>
 using namespace std;
+using namespace Eigen;
 
 int main() {
-    LSS<MatrixXd, VectorXd> solv;  // instanciation correcte
-    vector<int> tailles = {10,20,30};
-    for(int n : tailles) {
-        VectorXd x0 = VectorXd::Zero(n);
-        auto matrices = solv.generate_simple_sparse_tridiagonal_matrix(n, -1, 2);
-        SparseMatrix<double> A_sparse = matrices.first;
-        MatrixXd A_dense = matrices.second;
+    int n = 10;
+    double diagonal_value = 4.0;
+    double off_diagonal_value = -1.0;
 
-        double r1 = solv.rayon_spectral_JS(A_dense);
-        double r2 = solv.rayon_spectral_GS(A_dense);
-        double r3 = solv.rayon_spectral_SOR(A_dense, 1.8);
+    LSS<MatrixXd, VectorXd> solv;
 
-        cout << "Rayon Jacobi pour " << n << " : " << r1 << endl;
-        cout << "Rayon GS pour " << n << " : " << r2 << endl;
-        cout << "Rayon SOR pour " << n << " : " << r3 << endl;
+   // auto [A_sparse, A_dense] = solv.generate_simple_sparse_tridiagonal_matrix(...);
+    auto matrices = solv.generate_simple_sparse_tridiagonal_matrix(n, diagonal_value, off_diagonal_value);
+    SparseMatrix<double> A_sparse = matrices.first;
+    MatrixXd A_dense = matrices.second;
 
-        VectorXd b = VectorXd::Random(n);
-        b(0) = 0; b(n-1) = 0;
-        double h = 1.0/(n+1);
-        VectorXd b_h = h*h*b;
 
-        VectorXd x_exact = A_dense.colPivHouseholderQr().solve(b_h);
+    VectorXd x_exact = VectorXd::Ones(n);
+    VectorXd b_h = A_dense * x_exact;
+    VectorXd x0 = VectorXd::Zero(n);
 
-        auto resultJD = solv.jacobi_dense_with_error(A_dense, b_h, x0, x_exact);
-        auto resultJS = solv.jacobi_sparse_with_error(A_sparse, b_h, x0, x_exact);
-        auto resultGS = solv.gauss_seidel_sparse_with_error(A_sparse, b_h, x0, x_exact);
-        auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact, 1.8);
+    // Jacobi Dense
+    auto resultJD = solv.jacobi_dense_with_error(A_dense, b_h, x0, x_exact);
+    vector<double> errorsJD = get<3>(resultJD);
+    cout << "Jacobi Dense: Iterations = " << get<1>(resultJD)
+         << ", Time = " << get<2>(resultJD) << "s, Final Error = " << errorsJD.back() << endl;
 
-        cout << "Jacobi Dense itérations: " << get<1>(resultJD) << " temps: " << get<2>(resultJD) << "s\n";
-        cout << "Jacobi Sparse itérations: " << get<1>(resultJS) << " temps: " << get<2>(resultJS) << "s\n";
-        cout << "Gauss-Seidel itérations: " << get<1>(resultGS) << " temps: " << get<2>(resultGS) << "s\n";
-        cout << "SOR itérations: " << get<1>(resultSOR) << " temps: " << get<2>(resultSOR) << "s\n";
-    }
+    // Jacobi Sparse
+    auto resultJS = solv.jacobi_sparse_with_error(A_sparse, b_h, x0, x_exact);
+    vector<double> errorsJS = get<3>(resultJS);
+    cout << "Jacobi Sparse: Iterations = " << get<1>(resultJS)
+         << ", Time = " << get<2>(resultJS) << "s, Final Error = " << errorsJS.back() << endl;
+
+    // Gauss-Seidel Sparse
+    auto resultGS = solv.gauss_seidel_sparse_with_error(A_sparse, b_h, x0, x_exact);
+    vector<double> errorsGS = get<3>(resultGS);
+    cout << "Gauss-Seidel Sparse: Iterations = " << get<1>(resultGS)
+         << ", Time = " << get<2>(resultGS) << "s, Final Error = " << errorsGS.back() << endl;
+
+    // SOR Sparse
+    auto resultSOR = solv.SOR_sparse_with_error(A_sparse, b_h, x0, x_exact, 1.8);
+    vector<double> errorsSOR = get<3>(resultSOR);
+    cout << "SOR Sparse: Iterations = " << get<1>(resultSOR)
+         << ", Time = " << get<2>(resultSOR) << "s, Final Error = " << errorsSOR.back() << endl;
+
     return 0;
 }
