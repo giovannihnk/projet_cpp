@@ -1,0 +1,2328 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Version MSBuild 17.14.14+a129329f1 pour .NET Framework
+      La g├®n├®ration a d├®marr├® 13/09/2025 17:20:17.
+      
+      Projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
+      PrepareForBuild:
+        Cr├®ation du r├®pertoire "Debug\\".
+        La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+        Cr├®ation du r├®pertoire "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Cr├®ation de "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Suppression du fichier "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      G├®n├®ration du projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" termin├®e (cibles par d├®faut).
+      
+      La g├®n├®ration a r├®ussi.
+          0 Avertissement(s)
+          0 Erreur(s)
+      
+      Temps ├®coul├® 00:00:01.38
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/4.1.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link"
+      - "C:/Program Files/Java/jdk-23/lld-link.com"
+      - "C:/Program Files/Java/jdk-23/lld-link.exe"
+      - "C:/Program Files/Java/jdk-23/lld-link"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link.com"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link.exe"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link"
+      - "C:/Program Files/Inkscape/bin/lld-link.com"
+      - "C:/Program Files/Inkscape/bin/lld-link.exe"
+      - "C:/Program Files/Inkscape/bin/lld-link"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link.com"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link.exe"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link"
+      - "C:/Program Files/RStudio/lld-link.com"
+      - "C:/Program Files/RStudio/lld-link.exe"
+      - "C:/Program Files/RStudio/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/mt.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/mt.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/mt"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/mt.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/mt.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/mt"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/mt.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/mt.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/mt"
+      - "C:/Program Files/Java/jdk-23/mt.com"
+      - "C:/Program Files/Java/jdk-23/mt.exe"
+      - "C:/Program Files/Java/jdk-23/mt"
+      - "C:/Program Files/Java/jdk-23/bin/mt.com"
+      - "C:/Program Files/Java/jdk-23/bin/mt.exe"
+      - "C:/Program Files/Java/jdk-23/bin/mt"
+      - "C:/Program Files/Inkscape/bin/mt.com"
+      - "C:/Program Files/Inkscape/bin/mt.exe"
+      - "C:/Program Files/Inkscape/bin/mt"
+      - "C:/Program Files/R/R-4.4.3/bin/mt.com"
+      - "C:/Program Files/R/R-4.4.3/bin/mt.exe"
+      - "C:/Program Files/R/R-4.4.3/bin/mt"
+      - "C:/Program Files/RStudio/mt.com"
+      - "C:/Program Files/RStudio/mt.exe"
+      - "C:/Program Files/RStudio/mt"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/mt.com"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/mt.exe"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/mt"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/mt.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/mt.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/mt"
+      - "C:/MinGW/bin/mt.com"
+      - "C:/MinGW/bin/mt.exe"
+      - "C:/MinGW/bin/mt"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/mt.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/mt.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/mt"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/mt.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/mt.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/mt"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Version MSBuild 17.14.14+a129329f1 pour .NET Framework
+      La g├®n├®ration a d├®marr├® 13/09/2025 17:20:18.
+      
+      Projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
+      PrepareForBuild:
+        Cr├®ation du r├®pertoire "Debug\\".
+        La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+        Cr├®ation du r├®pertoire "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Cr├®ation de "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Suppression du fichier "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Mise ├á jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      G├®n├®ration du projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" termin├®e (cibles par d├®faut).
+      
+      La g├®n├®ration a r├®ussi.
+          0 Avertissement(s)
+          0 Erreur(s)
+      
+      Temps ├®coul├® 00:00:00.68
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/4.1.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/lld-link"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/lld-link"
+      - "C:/Program Files/Java/jdk-23/lld-link.com"
+      - "C:/Program Files/Java/jdk-23/lld-link.exe"
+      - "C:/Program Files/Java/jdk-23/lld-link"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link.com"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link.exe"
+      - "C:/Program Files/Java/jdk-23/bin/lld-link"
+      - "C:/Program Files/Inkscape/bin/lld-link.com"
+      - "C:/Program Files/Inkscape/bin/lld-link.exe"
+      - "C:/Program Files/Inkscape/bin/lld-link"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link.com"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link.exe"
+      - "C:/Program Files/R/R-4.4.3/bin/lld-link"
+      - "C:/Program Files/RStudio/lld-link.com"
+      - "C:/Program Files/RStudio/lld-link.exe"
+      - "C:/Program Files/RStudio/lld-link"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/lld-link"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/lld-link"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/lld-link"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/MATLAB/R2024b/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/"
+      - "C:/Program Files/Java/jdk-23/"
+      - "C:/Program Files/Java/jdk-23/bin/"
+      - "C:/Program Files/Inkscape/bin/"
+      - "C:/Program Files/R/R-4.4.3/bin/"
+      - "C:/Program Files/RStudio/"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/"
+      - "C:/MinGW/bin/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/LSS_Solver/bin/"
+      - "C:/Program Files (x86)/LSS_Solver/sbin/"
+      - "C:/Program Files (x86)/LSS_Solver/"
+    searched_directories:
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc.com"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc.exe"
+      - "C:/Program Files/MATLAB/R2024b/bin/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/rc.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/rc.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/rc"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/rc.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/rc.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/rc"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/PC/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/rc.com"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/rc.exe"
+      - "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/rc"
+      - "C:/Program Files/Java/jdk-23/rc.com"
+      - "C:/Program Files/Java/jdk-23/rc.exe"
+      - "C:/Program Files/Java/jdk-23/rc"
+      - "C:/Program Files/Java/jdk-23/bin/rc.com"
+      - "C:/Program Files/Java/jdk-23/bin/rc.exe"
+      - "C:/Program Files/Java/jdk-23/bin/rc"
+      - "C:/Program Files/Inkscape/bin/rc.com"
+      - "C:/Program Files/Inkscape/bin/rc.exe"
+      - "C:/Program Files/Inkscape/bin/rc"
+      - "C:/Program Files/R/R-4.4.3/bin/rc.com"
+      - "C:/Program Files/R/R-4.4.3/bin/rc.exe"
+      - "C:/Program Files/R/R-4.4.3/bin/rc"
+      - "C:/Program Files/RStudio/rc.com"
+      - "C:/Program Files/RStudio/rc.exe"
+      - "C:/Program Files/RStudio/rc"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/rc.com"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/rc.exe"
+      - "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/rc"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/rc.com"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/rc.exe"
+      - "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/rc"
+      - "C:/MinGW/bin/rc.com"
+      - "C:/MinGW/bin/rc.exe"
+      - "C:/MinGW/bin/rc"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/rc.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/rc.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/rc"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/rc.com"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/rc.exe"
+      - "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/rc"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/LSS_Solver/bin/rc.com"
+      - "C:/Program Files (x86)/LSS_Solver/bin/rc.exe"
+      - "C:/Program Files (x86)/LSS_Solver/bin/rc"
+      - "C:/Program Files (x86)/LSS_Solver/sbin/rc.com"
+      - "C:/Program Files (x86)/LSS_Solver/sbin/rc.exe"
+      - "C:/Program Files (x86)/LSS_Solver/sbin/rc"
+      - "C:/Program Files (x86)/LSS_Solver/rc.com"
+      - "C:/Program Files (x86)/LSS_Solver/rc.exe"
+      - "C:/Program Files (x86)/LSS_Solver/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/LSS_Solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/LSS_Solver"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-9i2us9"
+      binary: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-9i2us9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-9i2us9'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b336a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Version MSBuild 17.14.14+a129329f1 pour .NET Framework
+        La g├®n├®ration a d├®marr├® 13/09/2025 17:20:20.
+        
+        Projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i2us9\\cmTC_b336a.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
+        PrepareForBuild:
+          Cr├®ation du r├®pertoire "cmTC_b336a.dir\\Debug\\".
+          La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+          Cr├®ation du r├®pertoire "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i2us9\\Debug\\".
+          Cr├®ation du r├®pertoire "cmTC_b336a.dir\\Debug\\cmTC_b336a.tlog\\".
+        InitializeBuildStatus:
+          Cr├®ation de "cmTC_b336a.dir\\Debug\\cmTC_b336a.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+          Mise ├á jour de l'horodatage "cmTC_b336a.dir\\Debug\\cmTC_b336a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_b336a.dir\\Debug\\\\" /Fd"cmTC_b336a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Compilateur d'optimisation Microsoft (R) C/C++ version┬á19.44.35213 pour x64
+          Copyright (C) Microsoft Corporation. Tous droits r├®serv├®s.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_b336a.dir\\Debug\\\\" /Fd"cmTC_b336a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i2us9\\Debug\\cmTC_b336a.exe" /INCREMENTAL /ILK:"cmTC_b336a.dir\\Debug\\cmTC_b336a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-9i2us9/Debug/cmTC_b336a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-9i2us9/Debug/cmTC_b336a.lib" /MACHINE:X64  /machine:x64 cmTC_b336a.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b336a.vcxproj -> C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i2us9\\Debug\\cmTC_b336a.exe
+        FinalizeBuildStatus:
+          Suppression du fichier "cmTC_b336a.dir\\Debug\\cmTC_b336a.tlog\\unsuccessfulbuild".
+          Mise ├á jour de l'horodatage "cmTC_b336a.dir\\Debug\\cmTC_b336a.tlog\\cmTC_b336a.lastbuildstate".
+        G├®n├®ration du projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9i2us9\\cmTC_b336a.vcxproj" termin├®e (cibles par d├®faut).
+        
+        La g├®n├®ration a r├®ussi.
+            0 Avertissement(s)
+            0 Erreur(s)
+        
+        Temps ├®coul├® 00:00:00.59
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35213.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-1c3wzc"
+      binary: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-1c3wzc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-1c3wzc'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b300a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Version MSBuild 17.14.14+a129329f1 pour .NET Framework
+        La g├®n├®ration a d├®marr├® 13/09/2025 17:20:21.
+        
+        Projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1c3wzc\\cmTC_b300a.vcxproj" sur le n┼ôud 1 (cibles par d├®faut).
+        PrepareForBuild:
+          Cr├®ation du r├®pertoire "cmTC_b300a.dir\\Debug\\".
+          La sortie structur├®e est activ├®e. La mise en forme du compilateur diagnostics refl├¿te la hi├®rarchie des erreurs. Pour plus dÔÇÖinformations, consultez https://aka.ms/cpp/structured-output.
+          Cr├®ation du r├®pertoire "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1c3wzc\\Debug\\".
+          Cr├®ation du r├®pertoire "cmTC_b300a.dir\\Debug\\cmTC_b300a.tlog\\".
+        InitializeBuildStatus:
+          Cr├®ation de "cmTC_b300a.dir\\Debug\\cmTC_b300a.tlog\\unsuccessfulbuild", car "AlwaysCreate" a ├®t├® sp├®cifi├®.
+          Mise ├á jour de l'horodatage "cmTC_b300a.dir\\Debug\\cmTC_b300a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b300a.dir\\Debug\\\\" /Fd"cmTC_b300a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilateur d'optimisation Microsoft (R) C/C++ version┬á19.44.35213 pour x64
+          Copyright (C) Microsoft Corporation. Tous droits r├®serv├®s.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b300a.dir\\Debug\\\\" /Fd"cmTC_b300a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1c3wzc\\Debug\\cmTC_b300a.exe" /INCREMENTAL /ILK:"cmTC_b300a.dir\\Debug\\cmTC_b300a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-1c3wzc/Debug/cmTC_b300a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/CMakeScratch/TryCompile-1c3wzc/Debug/cmTC_b300a.lib" /MACHINE:X64  /machine:x64 cmTC_b300a.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b300a.vcxproj -> C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1c3wzc\\Debug\\cmTC_b300a.exe
+        FinalizeBuildStatus:
+          Suppression du fichier "cmTC_b300a.dir\\Debug\\cmTC_b300a.tlog\\unsuccessfulbuild".
+          Mise ├á jour de l'horodatage "cmTC_b300a.dir\\Debug\\cmTC_b300a.tlog\\cmTC_b300a.lastbuildstate".
+        G├®n├®ration du projet "C:\\Users\\PC\\Documents\\travail\\4a\\projet\\Emna_Giovanni\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1c3wzc\\cmTC_b300a.vcxproj" termin├®e (cibles par d├®faut).
+        
+        La g├®n├®ration a r├®ussi.
+            0 Avertissement(s)
+            0 Erreur(s)
+        
+        Temps ├®coul├® 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35213.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Eigen3"
+    configs:
+      -
+        filename: "Eigen3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "eigen3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Eigen3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/LSS_Solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/LSS_Solver"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:11 (find_package)"
+    name: "Eigen3"
+    configs:
+      -
+        filename: "Eigen3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "eigen3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Eigen3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/eigen/cmake\n/Eigen3Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/eigen/cmake\n/eigen3-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/LSS_Solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/LSS_Solver"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:11 (find_package)"
+    name: "Eigen3"
+    configs:
+      -
+        filename: "Eigen3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "eigen3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Eigen3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/eigen/cmake\n/Eigen3Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/eigen/cmake\n/eigen3-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/CMakeFiles/pkgRedirects/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Common Files/Oracle/Java/javapath/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MATLAB/R2024b/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WindowsApps/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Microsoft VS Code/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Python313/Scripts/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/Python/Launcher/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.13/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Java/jdk-23/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Inkscape/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/R/R-4.4.3/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/RStudio/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Programs/MiKTeX/miktex/bin/x64/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Local/Microsoft/WinGet/Packages/Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe/typst-x86_64-pc-windows-msvc/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/MinGW/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/PC/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Eigen3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/eigen3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\MATLAB\\R2024b\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\Program Files\\Java\\jdk-23"
+        - "C:\\Program Files\\Java\\jdk-23\\bin"
+        - "C:\\Program Files\\Inkscape\\bin"
+        - "C:\\Program Files\\R\\R-4.4.3\\bin"
+        - "C:\\Program Files\\RStudio"
+        - "C:\\Users\\PC\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\"
+        - "C:\\Users\\PC\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Typst.Typst_Microsoft.Winget.Source_8wekyb3d8bbwe\\typst-x86_64-pc-windows-msvc"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\MinGW\\bin"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git"
+        - "C:\\Users\\PC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13"
+        - "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\CMake"
+        - "c:\\Users\\PC\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/LSS_Solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/LSS_Solver"
+...

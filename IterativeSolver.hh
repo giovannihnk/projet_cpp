@@ -8,10 +8,13 @@ class IterativeSolver {
 protected:
     double _tol;
     int _max_iter;
+    
 
 public:
-    IterativeSolver(double tol = 1e-6, int max_iter = 1000)
-        : _tol(tol), _max_iter(max_iter) {}
+    IterativeSolver(double tol = 1e-6, int max_iter = 1000){
+        _tol=tol;
+        _max_iter=max_iter;
+    }
 
     virtual ~IterativeSolver() = default;
 

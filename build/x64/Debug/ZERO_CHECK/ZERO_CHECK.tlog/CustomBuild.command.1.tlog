@@ -1,0 +1,10 @@
+^C:\USERS\PC\DOCUMENTS\TRAVAIL\4A\PROJET\EMNA_GIOVANNI\BUILD\CMAKEFILES\001A107E66751ED7D18239E2ED5E03BF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni -BC:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/PC/Documents/travail/4a/projet/Emna_Giovanni/build/LSS_Solver.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

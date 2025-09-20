@@ -4,13 +4,13 @@ using namespace std;
 using namespace Eigen;
 
 int main() {
-    int n = 10;
+    int n = 111;
     double diagonal_value = 4.0;
     double off_diagonal_value = -1.0;
 
     LSS<MatrixXd, VectorXd> solv;
 
-   // auto [A_sparse, A_dense] = solv.generate_simple_sparse_tridiagonal_matrix(...);
+   // auto [A_sparse, A_dense] = solv.generate_simple_sparse_tridiagonal_matrix(...); 
     auto matrices = solv.generate_simple_sparse_tridiagonal_matrix(n, diagonal_value, off_diagonal_value);
     SparseMatrix<double> A_sparse = matrices.first;
     MatrixXd A_dense = matrices.second;
