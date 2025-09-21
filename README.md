@@ -6,3 +6,8 @@ J'ai encapsulé de façon à avoir une classe paramétrique, ce qui est très fa
     -main.cpp
     -main.exe
 Le reste c'est le bogoss qui l'a fait.
+
+Commande pour compiler le CMakeLists : 
+cd ./build
+cd --build .
+
