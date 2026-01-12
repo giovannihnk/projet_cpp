@@ -1,15 +1,11 @@
-Ce dépôt github reprend un de nos projets portant sur la SLGD (Résolution de Système Linéaire à Grande Dimension) : Ax = b , au cours de ce projet nous avons pu implémenter en Python les méthodes de :
-- Jacobi (version dense)
-- Jacobi (version sparse)
-- Gauss-Seidel (version dense)
-- Gauss-Seidel (version sparse)
-- SOR (version dense)
-- SOR (version sparse)
-
-Nous avons pu retranscrire ce projet du point de vu de la POO (Programmation Orientée Objet). 
-Le premier pas fut de choisir une architecture de projet adapté, on entend par cela les choix d'encapsulage, les liens entres nos différentes classes et leur natures.
-Le but était d'optimiser notre code via le polymorphisme et l'héritage de C++, permettant ainsi d'éviter les redondances et les possibles erreurs dûes à des modifications locales (au sein d'une classe et pas les autres). L'un des grands intérêt était également la gestion mémoire native à C++, ce qui à la fin nous a permi de faire des comparaisons entre nos implémentations (Python vs C++).
-
-La conclusion est claire, Python est plus rapide lorsque la matrice $$A$$ considérée est de petite dimension. Et inversement lorsque la dimension de A commence à être trop grande.
-
-
+This GitHub repository contains one of our projects on large-scale linear system solving (SLGD): Ax = b. During this project, we implemented the following methods in Python:
+• Jacobi (dense version)
+• Jacobi (sparse version)
+• Gauss-Seidel (dense version)
+• Gauss-Seidel (sparse version)
+• SOR (dense version)
+• SOR (sparse version)
+We were able to transcribe this project from an OOP (Object-Oriented Programming) perspective. The first step was to choose a suitable project architecture, by which we mean the choices of encapsulation, the links between our different classes and their nature. The goal was to optimise our code using C++ polymorphism and inheritance, thereby avoiding redundancies and potential errors due to local modifications (within one class and not others). Another major advantage was C++'s native memory management, which ultimately allowed us to compare our implementations (Python vs C++).
+The conclusion is clear: Python is faster when the matrix 
+𝐴
+ in question is small. Conversely, when the dimension of A becomes too large, the opposite is true.
